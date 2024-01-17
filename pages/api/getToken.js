@@ -3,6 +3,7 @@ export default async function handler(req, res) {
   params.append("grant_type", "authorization_code");
   params.append("code", req.query.code);
   params.append("redirect_uri", process.env.NEXT_PUBLIC_CALLBACK_URL);
+  params.append("code_verifier", global.codeVerifier);
 
   const result = await fetch("https://accounts.spotify.com/api/token", {
       method: "POST",
