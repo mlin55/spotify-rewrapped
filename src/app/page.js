@@ -5,10 +5,7 @@ import Login from './components/Login';
 import Recapped from './components/Recapped';
 
 export default function Home() {
-  // const params = new URLSearchParams(window.location.search);
-  // const code = params.get("code");
   const code = null;
-  const [accessToken, setAccessToken] = useState(null);
 
   useEffect(() => {
     // const fetchToken = async () => {
