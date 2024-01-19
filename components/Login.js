@@ -1,5 +1,5 @@
 'use client';
-import redirectToAuthCodeFlow from "../api/api";
+import redirectToAuthCodeFlow from "@/app/api/api";
 
 export default function Login() {
 

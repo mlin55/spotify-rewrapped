@@ -1,8 +1,8 @@
 'use client';
 import { useState, useEffect } from 'react';
 
-import Login from './components/Login';
-import Recapped from './components/Recapped';
+import Login from '../components/Login';
+import Recapped from '../components/Recapped';
 
 export default function Home() {
   const code = null;
