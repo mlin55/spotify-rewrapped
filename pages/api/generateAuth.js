@@ -10,7 +10,7 @@ export default async function handler(req, res) {
     params.append("client_id", process.env.NEXT_PUBLIC_CLIENT_ID);
     params.append("response_type", "code");
     params.append("redirect_uri", process.env.NEXT_PUBLIC_CALLBACK_URL);
-    params.append("scope", "user-read-private user-read-email");
+    params.append("scope", "user-top-read user-read-private user-read-email");
     params.append("code_challenge_method", "S256");
     params.append("code_challenge", codeChallenge);
 

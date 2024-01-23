@@ -52,7 +52,6 @@ export default async function handler(req, res) {
   if (trackSeeds.length > 0) {
     params.append('seed_tracks', trackSeeds);
   }
-  console.log('https://api.spotify.com/v1/recommendations?' + params);
   const recommendations = await fetch('https://api.spotify.com/v1/recommendations?' + params, {
     method: 'GET',
     headers: {
